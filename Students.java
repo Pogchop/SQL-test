@@ -51,6 +51,6 @@ public class Students {
                 ", StudentName='" + studentname + '\'' +
                 ", StudentAddress='" + studentaddress + '\'' +
                 ", StudentPhone='" + studentphone + '\'' +
-                '}' + mal;
+                '}' + '";
     }
 }
