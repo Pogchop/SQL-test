@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class StudentsView {
     int n;
-    final int lamo = 4;
+    final int lamo = 3;
     Scanner sc = new Scanner(System.in);
     Controller uc = new Controller();
     ArrayList<Students> studentsLíst = new ArrayList<>();
@@ -20,7 +20,6 @@ public class StudentsView {
         System.out.println("1 Add student");
         System.out.println("2 Display student");
         System.out.println("3 Save");
-        System.out.println("4 Exit");
     }
 
     public void studentsview() {
@@ -80,6 +79,3 @@ public class StudentsView {
         } uc.selectStudent();
     }
 }
-
-
-
