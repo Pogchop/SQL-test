@@ -17,8 +17,8 @@ public class StudentsView {
     }
 
     public void menu() {
-        System.out.println("1 Add student records");
-        System.out.println("2 Display student records");
+        System.out.println("1 Add student");
+        System.out.println("2 Display student");
         System.out.println("3 Save");
         System.out.println("4 Exit");
     }
@@ -42,25 +42,25 @@ public class StudentsView {
             views.menu();
             n = sc.nextInt();
         }
-        System.out.println("Stop...");
+        System.out.println("Stop");
     }
 
     public void addStudents() {
-        System.out.println("Student ID: ");
+        System.out.println("StudentID: ");
         String student_ID = sc.nextLine();
 
-        System.out.println("Student Name: ");
+        System.out.println("StudentName: ");
         String student_Name = sc.nextLine();
 
-        System.out.println("Student Address: ");
+        System.out.println("StudentAddress: ");
         String student_Address = sc.nextLine();
 
-        System.out.println("Student Phone: ");
+        System.out.println("StudentPhone: ");
         String student_Phone = sc.nextLine();
 
         Students students = new Students(student_ID, student_Name, student_Address, student_Phone);
         studentsLíst.add(new Students(students.getStudentid(), students.getStudentname(), students.getStudentaddress(), students.getStudentphone()));
-        System.out.println("Add Success");
+        System.out.println("Success");
     }
 
     public void displayStudents() {
@@ -80,4 +80,6 @@ public class StudentsView {
         } uc.selectStudent();
     }
 }
+
+
 
